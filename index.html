@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb site - EASY TUTORIAL</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <body>
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="images/logo.png" alt="logo" class="logo">
             <ul class="nav-links">
-                <li><a href="#">Popular Places</a></li>
+                <li><a href="#" class="active">Popular Places</a></li>
                 <li><a href="#">Travel Outside</a></li>
                 <li><a href="#">Online Packages</a></li>
             </ul>
             <a href="#" class="register-btn">Register Now</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
         </nav>
 
         <div class="container">
@@ -161,7 +164,29 @@
             </div>
         </div>
         <a href="#" class="start-btn">Start making money</a>
+
+        <div class="about-msg">
+            <h2>About Staybnb</h2>
+            <p>Contrary to popular belief, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quisquam a numquam eum eos alias quidem ex vitae dignissimos mollitia unde, modi facilis magnam illo fuga ad doloribus, porro earum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos exercitationem atque, provident velit, dolores mollitia reiciendis asperiores itaque enim quidem pariatur quam tempora quae deserunt veniam, consectetur earum perspiciatis unde. </p>
+        </div>
+
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; 2021, Easy Tutorials.</p>
+        </div>
     </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
 
 </body>
 </html>
